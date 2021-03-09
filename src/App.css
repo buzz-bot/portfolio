@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+:root
+{
+  --pwhite:#fff;
+  --txtprimary:yellow;
+  --grey333:#333;
 }
+/*   LOGO   */
+.logo{height: 3.25rem}
+.navbar-brand{max-width: 4rem;}
+body{font-family: 'Roboto Condensed', sans-serif;}
+/* ------------------ NEMU ----------------------*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav a.nav-link{font-weight: 500;letter-spacing: 0.0375rem;cursor: pointer;}
+nav ul li{text-transform: uppercase;}
+.navbar-nav > li > a{color: var(--pwhite)!important;margin-right: 0.85rem;margin-left: 00.85rem;font-size: 16px!important;border-top: 1px solid transparent;}
+.navbar-nav > li >a.active , .navbar-nav > li >a.active:focus{border-top: 1px solid var(--txtprimary);}
+.navbar-nav > li > a:hover{border-top: 1px solid var(--txtprimary);}
+.navbar-toggler {
+  border-color:var(--pwhite);
+  transition: 0.3s;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-toggler-icon{
+  background: var(--grey333);
+  color: var(--pwhite);
+  transition: 0.3s;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.whiteclr{color: #fff;}
